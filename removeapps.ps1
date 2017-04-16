@@ -1,6 +1,7 @@
 ﻿### install firefox?
 ### show all taskbar icons?
 ### disable UAC (included)
+### Show hidden files and OS files?
 
 #        Set-ExecutionPolicy RemoteSigned
 echo "Elevating privileges for this process"
