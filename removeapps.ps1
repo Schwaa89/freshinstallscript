@@ -2,6 +2,7 @@
 
 # additional things to add:
 
+### get machine patched
 ### install choco and then list applications to install? need to make sure path is set to D:\Apps or E:\Apps
 ### show all taskbar icons?
 ### Never combine taskbar
