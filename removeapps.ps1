@@ -1,4 +1,18 @@
-﻿param([switch]$Elevated)
+## touched for new pc build
+
+# additional things to add:
+
+### install choco and then list applications to install? need to make sure path is set to D:\Apps or E:\Apps
+### show all taskbar icons?
+### Never combine taskbar
+### disable UAC (included)
+### Show hidden files and OS files? maybe not OS ones
+### Create folder "Person" on D
+### Map Desktop, Documents, Downloads, Music, Pictures, Videos to D root
+### Insert ___Put Nothing Personal in here.txt into regular documents folder 
+### Insert __Only default document stuff eg game saves.txt into regular documents folder
+
+param([switch]$Elevated)
 function Check-Admin {
 $currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent())
 $currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
@@ -20,10 +34,7 @@ exit
 iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 
-### install firefox?
-### show all taskbar icons?
-### disable UAC (included)
-### Show hidden files and OS files?
+
 
 #        Set-ExecutionPolicy RemoteSigned
 echo "Elevating privileges for this process"
